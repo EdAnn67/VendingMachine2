@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Maquina Expendedora";
+}
+
+<div class="jumbotron">
+    <h1>Bienvenido Usuario</h1>
+    <h2>¿Que desea ordenar?</h2>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Coca Cola ($1)</h2>
+        <img src="~/Media/CocaCola.jpg" width="250" height="200"/>
+        <p><button name="B1">Ordenar</button></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Sandwich ($0.75)</h2>
+        <img src="~/Media/Sandwich.png" width="250" height="200" />
+        <p><button name="B2">Ordenar</button></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Chocolate ($0.50)</h2>
+        <img src="~/Media/Chocolate.jpg" width="250" height="200" />
+        
+        <p><button name="B3">Ordenar</button></p>
+    </div>
+</div>
+
+<div>
+    <p id="Procesado">
+        Procesando:  
+    </p>
+    <p id="Entregado">
+        Entregado: 
+    </p>
+    <p id="Total">
+        Total: $
+    </p>
+</div>
+<script src="~/Scripts/VendingMachine.js"></script>
